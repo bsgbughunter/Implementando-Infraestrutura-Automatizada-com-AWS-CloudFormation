@@ -1,0 +1,13 @@
+```yaml
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Template simples para criação de uma instância EC2
+
+Resources:
+  MinhaInstanciaEC2:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t2.micro
+      ImageId: ami-0c02fb55956c7d316  # Substitua conforme sua região
+      Tags:
+        - Key: Name
+          Value: InstanciaCloudFormationDemo
